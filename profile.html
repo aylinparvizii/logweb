@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your profile</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div class="form-container">
+<h2>welcome, {{username}}!</h2>
+<p>This is Your profile page.</p>
+<p><strong>Email:</strong>{{email}}</p>
+<a href="{{ url_for('logout') }}">Logout</a>
+
+</div>
+</body>
+</html>

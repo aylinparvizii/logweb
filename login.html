@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+     
+    <div class="form-container">
+        <form action="/login" method="POST">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username"><i class="bx bxs-user"></i> Username</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="password"><i class="bx bxs-lock-alt"></i> Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit">Log in</button>
+        </form>
+        <p>Forgot your password? <a href="/forgot-password">Reset</a></p>
+        <p>Don't have an account? <a href="/">Register</a></p>
+    </div>
+</body>
+</html>
